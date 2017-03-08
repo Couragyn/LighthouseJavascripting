@@ -28,7 +28,7 @@ function calculateSalesTax(salesData, taxRates) {
       nameArray.push(salesData[i].name);
     }
   }
-  console.log(salesTax);
+  return salesTax ;
 }
 
 var salesTaxRates = {
@@ -60,6 +60,7 @@ function getSum(total, num) {
 }
 
 var results = calculateSalesTax(companySalesData, salesTaxRates);
+console.log(results);
 
 /* Expected Results:
 {
